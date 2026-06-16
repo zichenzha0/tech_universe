@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>Jarvis Touch · Gesture HUD</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #05070a; overflow: hidden; }
+  #stage { position: fixed; inset: 0; display: block; }
+  video { display: none; }
+  #status {
+    position: fixed;
+    left: 16px;
+    top: 16px;
+    font-family: -apple-system, "Segoe UI", "PingFang SC", sans-serif;
+    font-size: 13px;
+    color: #7fd8c4;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+  <video id="video" autoplay playsinline muted></video>
+  <canvas id="stage"></canvas>
+  <div id="status">初始化中...</div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
